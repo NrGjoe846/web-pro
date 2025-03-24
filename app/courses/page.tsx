@@ -317,6 +317,33 @@ export default function CoursesPage() {
             ))}
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className={styles.footer}>
+          <div className={styles.footerContent}>
+            <div className={styles.footerSection}>
+              <h3>About UNAI TECH</h3>
+              <p>Empowering students with cutting-edge technology education and practical internship experiences.</p>
+            </div>
+            <div className={styles.footerSection}>
+              <h3>Quick Links</h3>
+              <ul>
+                <li><Link href="/about">About Us</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
+                <li><Link href="/privacy">Privacy Policy</Link></li>
+                <li><Link href="/terms">Terms of Service</Link></li>
+              </ul>
+            </div>
+            <div className={styles.footerSection}>
+              <h3>Contact Us</h3>
+              <p>Email: info@unaitech.com</p>
+              <p>Phone: +1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div className={styles.footerBottom}>
+            <p>&copy; {new Date().getFullYear()} UNAI TECH. All rights reserved.</p>
+          </div>
+        </footer>
       </main>
       {showAchievements && <Achievements onClose={() => setShowAchievements(false)} />}
       {showStats && <Stats onClose={() => setShowStats(false)} />}
