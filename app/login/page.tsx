@@ -4,7 +4,7 @@ import type React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Eye, EyeOff, Loader2, ArrowLeft } from "lucide-react";
+import { Eye, EyeOff, Loader2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -88,12 +88,6 @@ export default function LoginPage() {
       className="tech-background min-h-screen flex items-center justify-center p-4"
       style={{ background: "linear-gradient(135deg, #0a0a1f 0%, #1a1a3d 100%)" }} // Fallback
     >
-      {/* Back Button */}
-      <Link href="/" className="back-button">
-        <ArrowLeft size={20} />
-        <span>Back</span>
-      </Link>
-
       {/* Particle Effects */}
       <div className="particles">
         <div className="particle" />
@@ -257,17 +251,22 @@ export default function LoginPage() {
               </motion.div>
             </form>
 
-            {/* Sign Up Link */}
+            {/* Sign Up Link and Skip Link */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-center"
+              className="text-center space-y-2"
             >
               <p className="text-gray-400">
                 Don’t have an account?{" "}
                 <Link href="/signup" className="neon-text hover:text-neon-pink transition-colors">
                   Sign Up
+                </Link>
+              </p>
+              <p>
+                <Link href="/Dashboard" className="neon-text hover:text-neon-pink transition-colors">
+                  Skip
                 </Link>
               </p>
             </motion.div>
