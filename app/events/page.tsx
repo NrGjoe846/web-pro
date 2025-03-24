@@ -95,7 +95,7 @@ export default function EventsPage() {
     <div
       className={`min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white ${spaceGrotesk.className}`}
     >
-      <Parallax pages={2} style={{ top: "0", left: "0" }}>
+      <Parallax pages={2.5} style={{ top: "0", left: "0" }}>
         <ParallaxLayer offset={0} speed={0.5}>
           <header className="bg-gray-800 shadow-lg backdrop-blur-lg bg-opacity-30 sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
@@ -335,6 +335,69 @@ export default function EventsPage() {
               ))}
             </div>
           </section>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2} speed={0.1}>
+          <footer className="bg-gray-800 shadow-lg backdrop-blur-lg bg-opacity-30">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                  <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+                    UNAI TECH
+                  </h3>
+                  <p className="text-gray-400">
+                    Empowering the future through technology and innovation.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                  <ul className="space-y-2">
+                    <li>
+                      <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                        About Us
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                        Contact
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+                        Privacy Policy
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold mb-4 text-white">Connect With Us</h4>
+                  <div className="flex space-x-4">
+                    <Link
+                      href="#"
+                      className="text-gray-400 hover:text-white transition-colors hover-glow"
+                    >
+                      Twitter
+                    </Link>
+                    <Link
+                      href="#"
+                      className="text-gray-400 hover:text-white transition-colors hover-glow"
+                    >
+                      LinkedIn
+                    </Link>
+                    <Link
+                      href="#"
+                      className="text-gray-400 hover:text-white transition-colors hover-glow"
+                    >
+                      GitHub
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>© {new Date().getFullYear()} UNAI TECH. All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
         </ParallaxLayer>
       </Parallax>
 
