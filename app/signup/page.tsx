@@ -113,7 +113,10 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="tech-background min-h-screen flex items-center justify-center p-4">
+    <div
+      className="tech-background min-h-screen flex items-center justify-center p-4"
+      style={{ background: "linear-gradient(135deg, #0a0a1f 0%, #1a1a3d 100%)" }} // Fallback
+    >
       {/* Particle Effects */}
       <div className="particles">
         <div className="particle" />
