@@ -79,7 +79,7 @@
 /* Tech-Inspired Background with Particles */
 .tech-background {
   position: relative;
-  background: linear-gradient(135deg, #0a0a1f 0%, #1a1a3d 100%);
+  background: linear-gradient(135deg, #0a0a1f 0%, #1a1a3d 100%) !important; /* Ensure it takes precedence */
   overflow: hidden;
 }
 
