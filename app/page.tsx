@@ -45,7 +45,7 @@ export default function LandingPage() {
               </Button>
             </Link>
             <Link href="/login">
-              <Button className={styles.tradingButton}>Login</Button>
+              <Button className={styles.tradingButton}>Start Journey</Button>
             </Link>
             
           </div>
@@ -86,7 +86,7 @@ export default function LandingPage() {
           <p className={styles.subtitle}>
             Explore cutting-edge courses in AI, and more. Join the future of education today!
           </p>
-          <Link href="/Dashboard">
+          <Link href="/login">
             <Button className={styles.glowingButton}>Start Journey →</Button>
           </Link>
         </motion.div>
